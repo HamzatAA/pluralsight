@@ -127,9 +127,20 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-.showcase
+.showcase_content h1{
+    font-size: 3rem;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.showcase .secondary_btn{
+    width: 60%;
+    margin: auto;
+}
 
 
 /* FOOTER */
@@ -138,6 +149,10 @@ span{
     text-align: center;
     font-size: .8rem;
     max-width: 80%;
+}
+
+.main_footer p{
+    margin-bottom: .5rem;
 }
 
 .main_footer a{
@@ -195,5 +210,32 @@ span{
 
     .right{
         flex: 6;
+    }
+}
+
+@media(max-width: 768px){
+    body{
+        overflow: auto;
+    }
+
+    .right{
+        display: none;
+    }
+
+    .left{
+        justify-content: start;
+        margin-top: 4vh;
+    }
+
+    .logo{
+        margin-bottom: 2vh;
+    }
+
+    .text-input{
+        margin-bottom: .7rem;
+    }
+
+    .main_footer{
+        padding-top: 2rem;
     }
 }
